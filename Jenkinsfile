@@ -14,5 +14,10 @@ pipeline {
         sh 'npm install' // Executs a simple batch script to simulate an installation step
    }
     }
+    stage('Start project') { // Defines another stage named "Install Dependencies"
+      steps {
+        sh 'npm run start' // Executs a simple batch script to simulate an installation step
+   }
+    }
   }
 }
